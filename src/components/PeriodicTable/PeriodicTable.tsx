@@ -7,9 +7,9 @@ import {
   DialogDescription,
 } from "@radix-ui/react-dialog";
 import { useState } from "react";
-import { ElementProps } from "@/interfaces/ElementProps";
+// import { ElementProps } from "@/interfaces/ElementProps";
 
-export function PeriodicTable(props: ElementProps) {
+export function PeriodicTable() {
   const [mouseEventValue, setMouseEventValue] = useState(null);
 
   const handleMouseDown = (e: any) => {
@@ -30,7 +30,7 @@ export function PeriodicTable(props: ElementProps) {
           {mouseEventValue}
         </DialogTitle>
         <DialogDescription className="whitespace-pre-line flex-column overflow-auto bg-transparent">
-          <div className="my-3 bg-transparent">
+          {/* <div className="my-3 bg-transparent">
             <label htmlFor="" className="font-bold bg-transparent">
               Descoberto por:
             </label>
@@ -92,6 +92,76 @@ export function PeriodicTable(props: ElementProps) {
             </label>
             <p>{props.howIsItUse}</p>
           </div>
+
+          <div className="my-3 bg-transparent">
+            <label htmlFor="" className="font-bold bg-transparent">
+              Número de neutrons:
+            </label>
+            <p>{props.nNumber}</p>
+          </div>
+
+          <div className="my-3 bg-transparent">
+            <label htmlFor="" className="font-bold bg-transparent">
+              Número de massa:
+            </label>
+            <p>{props.aNumber}</p>
+          </div>
+
+          <div className="my-3 bg-transparent">
+            <label htmlFor="" className="font-bold bg-transparent">
+              Número de elétrons:
+            </label>
+            <p>{props.eNumber}</p>
+          </div>
+
+          <div className="my-3 bg-transparent">
+            <label htmlFor="" className="font-bold bg-transparent">
+              Média da massa:
+            </label>
+            <p>{props.uNumber}</p>
+          </div>
+
+          <div className="my-3 bg-transparent">
+            <label htmlFor="" className="font-bold bg-transparent">
+              Maior reserva do mundo:
+            </label>
+            <p>{props.zNumber}</p>
+          </div>
+
+          <div className="my-3 bg-transparent">
+            <label htmlFor="" className="font-bold bg-transparent">
+              Maior reserva do mundo:
+            </label>
+            <p>{props.biggestWorldReserves}</p>
+          </div>
+
+          <div className="my-3 bg-transparent">
+            <label htmlFor="" className="font-bold bg-transparent">
+              Maior reserva do mundo:
+            </label>
+            <p>{props.attributes}</p>
+          </div>
+
+          <div className="my-3 bg-transparent">
+            <label htmlFor="" className="font-bold bg-transparent">
+              Maior reserva do mundo:
+            </label>
+            <p>{props.dialogTitle}</p>
+          </div>
+
+          <div className="my-3 bg-transparent">
+            <label htmlFor="" className="font-bold bg-transparent">
+              Maior reserva do mundo:
+            </label>
+            <p>{props.elementName}</p>
+          </div>
+
+          <div className="my-3 bg-transparent">
+            <label htmlFor="" className="font-bold bg-transparent">
+              Maior reserva do mundo:
+            </label>
+            <p>{props.offersRisk}</p>
+          </div> */}
         </DialogDescription>
       </DialogContent>
     </Dialog>
